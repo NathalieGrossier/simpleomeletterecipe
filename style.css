@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
-
+html {
+   font-family: young, serif;
+   max-width: 1440px;
+   display: flex;
+   justify-content: center;
+}
 
 ol {
     font-weight: bold;
+    color: hsl(14, 45%, 36%)
 }
 
 ol li span{
     font-weight: normal;
+    color: black;
 }
 
+.text {
+    color:black;
+}
 
 h2 {
     color: hsl(14, 45%, 36%)
@@ -24,6 +35,7 @@ body {
     background: hsl(30, 54%, 90%);
     display: flex;
     justify-content: center;
+    width:100%;
 
 
 & #blanc {
@@ -32,12 +44,12 @@ body {
     background: white;
     justify-content: center;
     width: 50%;
-    padding: 16px;
+    padding:8px;
 
 & #image {
   &  img {
        width: 100%;
-    border-radius: 16px;
+        border-radius: 16px;
         display: flex;
         justify-content: center;
     }
@@ -45,7 +57,23 @@ body {
 & #prep {
     background: hsl(330, 100%, 98%);
     padding: 16px;
+    & ul {
+        color: hsl(332, 51%, 32%);
+    }
+    & ul li span {
+        color : black ;
+    }
 }
+
+& #ingredients {
+    & ul {
+     color: hsl(14, 45%, 36%)
+    }
+    & ul li span {
+        color: black;
+    }
+}
+
 
 & #nutrition {
    
@@ -61,7 +89,26 @@ body {
             border-bottom: black 1px solid;
             text-align: left;
         }
+        & th {
+            color: hsl(14, 45%, 36%)
+
+        }
     }
 }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+body {
+    background: none;
+    & #blanc {
+     width: 100%;
+        & #image {
+            & img {
+         border-radius: 0;
+    }
+}
+ }
 }
 }
