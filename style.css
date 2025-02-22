@@ -1,0 +1,19 @@
+h2 {
+    color: red;
+}
+
+body {
+    background: beige;
+
+
+#blanc {
+    display: flex;
+    background: white;
+
+&#image {
+  &  img {
+        border-radius: 16px;
+    }
+}
+}
+}
