@@ -1,17 +1,33 @@
+
+
+
+
+
+
 h2 {
     color: red;
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
 body {
     background: beige;
-
-
-#blanc {
     display: flex;
-    background: white;
+    justify-content: center;
 
-&#image {
+
+& #blanc {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+
+& #image {
   &  img {
+
+    
         border-radius: 16px;
     }
 }
