@@ -1,7 +1,13 @@
 
 
 
+ol {
+    font-weight: bold;
+}
 
+ol li span{
+    font-weight: normal;
+}
 
 
 h2 {
