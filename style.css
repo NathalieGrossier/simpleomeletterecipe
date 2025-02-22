@@ -8,10 +8,6 @@ h2 {
     color: red;
 }
 
-html {
-    display: flex;
-    justify-content: center;
-}
 body {
     background: beige;
     display: flex;
@@ -23,12 +19,15 @@ body {
     flex-direction: column;
     background: white;
     justify-content: center;
+    width: 70%;
 
 & #image {
   &  img {
-
+width:80%;
     
         border-radius: 16px;
+        display: flex;
+        justify-content: center;
     }
 }
 }
