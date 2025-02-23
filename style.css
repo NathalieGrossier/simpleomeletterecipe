@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
 html {
    font-family: young, serif;
    max-width: 1440px;
    display: flex;
    justify-content: center;
+}
+
+img {
+    overflow-clip-margin: 0;
 }
 
 body {
@@ -99,6 +109,8 @@ body {
 @media only screen and (max-width: 375px) {
 body {
     background: none;
+    marging: 0;
+    
     & #blanc {
      width: 100%;
         & #image {
