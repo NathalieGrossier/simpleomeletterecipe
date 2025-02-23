@@ -7,35 +7,14 @@ html {
    justify-content: center;
 }
 
-ol {
-    font-weight: bold;
-    color: hsl(14, 45%, 36%)
-}
-
-ol li span{
-    font-weight: normal;
-    color: black;
-}
-
-.text {
-    color:black;
-}
-
-h2 {
-    color: hsl(14, 45%, 36%)
-}
-
-h2#h2prep {
-    color: hsl(332, 51%, 32%);
-}
-
-
-
 body {
     background: hsl(30, 54%, 90%);
     display: flex;
     justify-content: center;
     width:100%;
+    h2 {
+        color: hsl(14, 45%, 36%)
+    };
 
 
 & #blanc {
@@ -57,6 +36,9 @@ body {
 & #prep {
     background: hsl(330, 100%, 98%);
     padding: 16px;
+    h2#h2prep {
+        color: hsl(332, 51%, 32%);
+    }
     & ul {
         color: hsl(332, 51%, 32%);
     }
@@ -74,6 +56,21 @@ body {
     }
 }
 
+& #instructions {
+    & ol {
+        font-weight: bold;
+        color: hsl(14, 45%, 36%)
+    }
+    
+    & ol li span{
+        font-weight: normal;
+        color: black;
+    }
+    
+    & .text {
+        color:black;
+    }
+}
 
 & #nutrition {
    
